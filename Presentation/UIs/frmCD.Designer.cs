@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.picHinh = new System.Windows.Forms.PictureBox();
             this.txtgiabancd = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnhuycd = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,15 +57,15 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.picHinh = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHinh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -106,6 +106,15 @@
             this.splitContainer1.Size = new System.Drawing.Size(784, 511);
             this.splitContainer1.SplitterDistance = 317;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // picHinh
+            // 
+            this.picHinh.Location = new System.Drawing.Point(28, 52);
+            this.picHinh.Name = "picHinh";
+            this.picHinh.Size = new System.Drawing.Size(167, 170);
+            this.picHinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHinh.TabIndex = 40;
+            this.picHinh.TabStop = false;
             // 
             // txtgiabancd
             // 
@@ -151,6 +160,7 @@
             this.btnluucd.TabIndex = 31;
             this.btnluucd.Text = "Lưu";
             this.btnluucd.UseVisualStyleBackColor = true;
+            this.btnluucd.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnsuacd
             // 
@@ -169,6 +179,7 @@
             this.btnthemcd.TabIndex = 29;
             this.btnthemcd.Text = "Thêm";
             this.btnthemcd.UseVisualStyleBackColor = true;
+            this.btnthemcd.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnhinhcd
             // 
@@ -287,17 +298,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::Presentation.Properties.Resources.Silver_Background_Wallpaper_Best;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(784, 190);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
@@ -347,14 +347,16 @@
             this.Column4.HeaderText = "Giá Bán";
             this.Column4.Name = "Column4";
             // 
-            // picHinh
+            // pictureBox2
             // 
-            this.picHinh.Location = new System.Drawing.Point(28, 52);
-            this.picHinh.Name = "picHinh";
-            this.picHinh.Size = new System.Drawing.Size(167, 170);
-            this.picHinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picHinh.TabIndex = 40;
-            this.picHinh.TabStop = false;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Presentation.Properties.Resources.Silver_Background_Wallpaper_Best;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(784, 190);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // frmCD
             // 
@@ -371,10 +373,10 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHinh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

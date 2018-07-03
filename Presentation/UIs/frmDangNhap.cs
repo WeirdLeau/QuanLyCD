@@ -48,21 +48,37 @@ namespace Presentation.UIs
             string password = txtpass.Text;
             
             type = -1;
+           
             foreach(NhanVien nv in ds)
-            {
-                if (nv.TenNV == username && nv.Mk == password)
-                    type = nv.LoaiNV;
-            }
-            if (type!=-1)
-            {
-                this.Hide();
-                frmMainUI p = new frmMainUI(type,this);
-                p.ShowDialog();
-                this.Show();
-            }
-         
-
             
+                {
+
+                    if (nv.TenNV == username && nv.Mk == password)
+                {
+                    type = nv.LoaiNV;
+                    count = 0;
+                    MessageBox.Show("Đăng nhập thành công");
+                }
+                        
+                }
+                if (type != -1)
+                {
+                    this.Hide();
+                    frmMainUI p = new frmMainUI(type, this);
+                    p.ShowDialog();
+                    this.Show();
+                }
+
+            MessageBox.Show("Đăng nhập thất bại");
+            count++;
+            if (count > 2)
+            {
+                count = 2;
+                timer1.Interval = 1000;
+                btnlogin.Enabled = false;
+                timer1.Start();
+            }
+
         }
         public void clear()
         {
@@ -92,6 +108,18 @@ namespace Presentation.UIs
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            count--;
+            btnlogin.Text = "Next login: " + count;
+            if (count == 0)
+            {
+                btnlogin.Text = "Login";
+                btnlogin.Enabled = true;
+                timer1.Stop();
+            }
         }
     }
 }

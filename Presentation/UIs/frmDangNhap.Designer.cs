@@ -115,6 +115,10 @@
             this.piclogin.TabStop = false;
             this.piclogin.Click += new System.EventHandler(this.piclogin_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

@@ -16,5 +16,36 @@ namespace Presentation.UIs
         {
             InitializeComponent();
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            txtMaCD.Text = null;
+            txtDonGia.Text = null;
+            txtLoaiCD.Text = null;
+            txtSoLuong.Text = null;
+            txtTenCD.Text = null;
+        }
+
+        private void btnXoaHet_Click(object sender, EventArgs e)
+        {
+            txtMaCD.Text = null;
+            txtDonGia.Text = null;
+            txtLoaiCD.Text = null;
+            txtSoLuong.Text = null;
+            txtTenCD.Text = null;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+                this.Close();
+        }
+
+        private void frmBanCDNew_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Bạn có chăc chưa?","Thoát",MessageBoxButtons.YesNo)==System.Windows.Forms.DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

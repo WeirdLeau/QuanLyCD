@@ -17,6 +17,6 @@ namespace Presentation.UIs
             InitializeComponent();
         }
 
-        
+       
     }
 }

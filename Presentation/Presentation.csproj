@@ -54,12 +54,6 @@
     <Compile Include="UIs\frmBanCD.Designer.cs">
       <DependentUpon>frmBanCD.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIs\frmBanCDNew.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UIs\frmBanCDNew.Designer.cs">
-      <DependentUpon>frmBanCDNew.cs</DependentUpon>
-    </Compile>
     <Compile Include="UIs\frmQuanLyHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +114,6 @@
     </Compile>
     <EmbeddedResource Include="UIs\frmBanCD.resx">
       <DependentUpon>frmBanCD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UIs\frmBanCDNew.resx">
-      <DependentUpon>frmBanCDNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIs\frmQuanLyHoaDon.resx">
       <DependentUpon>frmQuanLyHoaDon.cs</DependentUpon>

@@ -35,3 +35,21 @@ C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanL
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.exe
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\bin\Debug\Presentation.exe
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\bin\Debug\Presentation.pdb
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmBanCD.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmQuanLyBanCD.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmCD.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmDangNhap.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmKhachHang.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmMainUI.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmNhanVien.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmThongKeDoanhThu.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmThongKeKho.resources
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.exe
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.pdb

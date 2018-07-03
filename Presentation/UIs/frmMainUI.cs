@@ -13,7 +13,7 @@ namespace Presentation.UIs
     public partial class frmMainUI : Form
     {
         private frmDangNhap frmDangNhap;
-        public frmMainUI(int type,frmDangNhap frmDangNhap)
+        public frmMainUI(int type, frmDangNhap frmDangNhap)
         {
             this.frmDangNhap = frmDangNhap;
             InitializeComponent();
@@ -28,14 +28,15 @@ namespace Presentation.UIs
                 // admin
                 case 1:
                     break;
-            }   
+            }
         }
 
-       
-        
+
+
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
 
         {
+            
             this.frmDangNhap.clear();
             this.Close();
             
@@ -57,6 +58,18 @@ namespace Presentation.UIs
         private void frmMainUI_Load(object sender, EventArgs e)
         {
             label1.Text = "BÉ CUTE";
+        }
+
+        private void quảnLýKháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmKhachHang kh = new frmKhachHang();
+            kh.Show();
+        }
+
+        private void quảnLýCDToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmCD cd = new frmCD();
+            cd.Show();
         }
     }
 }
