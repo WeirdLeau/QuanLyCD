@@ -46,20 +46,21 @@ namespace Presentation.UIs
             int type;
             string username = txtuser.Text;
             string password = txtpass.Text;
-            
+
             type = -1;
-           
-            foreach(NhanVien nv in ds)
-            
+            if (type == -1)
+            {
+                foreach (NhanVien nv in ds)
+
                 {
 
                     if (nv.TenNV == username && nv.Mk == password)
-                {
-                    type = nv.LoaiNV;
-                    count = 0;
-                    MessageBox.Show("Đăng nhập thành công");
-                }
-                        
+                    {
+                        type = nv.LoaiNV;
+                        count = 0;
+                        MessageBox.Show("Đăng nhập thành công");
+                    }
+
                 }
                 if (type != -1)
                 {
@@ -67,9 +68,16 @@ namespace Presentation.UIs
                     frmMainUI p = new frmMainUI(type, this);
                     p.ShowDialog();
                     this.Show();
-                }
 
-            MessageBox.Show("Đăng nhập thất bại");
+                }
+            
+           else
+            {
+                MessageBox.Show("Đăng nhập không thành công");
+            }
+        }
+
+
             count++;
             if (count > 2)
             {
@@ -104,7 +112,7 @@ namespace Presentation.UIs
 
         }
 
-        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
