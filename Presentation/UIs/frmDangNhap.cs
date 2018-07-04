@@ -18,6 +18,8 @@ namespace Presentation.UIs
             InitializeComponent();
         }
 
+        
+
         private void btnexit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -27,7 +29,7 @@ namespace Presentation.UIs
         private void btnlogin_Click(object sender, EventArgs e)
         {
             // tao ds nhan vien (mai mot tao function load database)
-            ds = new NhanVien[2];
+            ds = new NhanVien[3];
             ds[0] = new NhanVien()
             //nhanvien
             {
@@ -42,7 +44,13 @@ namespace Presentation.UIs
                 Mk = "789",
                 LoaiNV = 1
             };
-
+            //admin
+            ds[2] = new NhanVien()
+            {
+                TenNV = "a@b",
+                Mk = "123",
+                LoaiNV = 1
+            };
             int type;
             string username = txtuser.Text;
             string password = txtpass.Text;
@@ -67,7 +75,7 @@ namespace Presentation.UIs
                     this.Hide();
                     frmMainUI p = new frmMainUI(type, this);
                     p.ShowDialog();
-                    this.Show();
+                   this.Show();
 
                 }
             

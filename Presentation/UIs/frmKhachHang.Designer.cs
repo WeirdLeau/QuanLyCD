@@ -202,6 +202,7 @@
             this.Name = "frmKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thông Tin Khách Hàng";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmKhachHang_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

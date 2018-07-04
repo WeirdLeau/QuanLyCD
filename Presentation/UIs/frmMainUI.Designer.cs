@@ -30,7 +30,6 @@
         {
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýNhânViênToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýKháchHàngToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +42,6 @@
             this.thốngKêSốLượngCDBánTrongNgàyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.top10CDBánNhiềuNhấtTrongThángToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêDoanhThuTrongNgàyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,8 +64,8 @@
             // menuStrip2
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.adminToolStripMenuItem,
             this.nhânViênToolStripMenuItem,
+            this.adminToolStripMenuItem,
             this.quảnLýToolStripMenuItem,
             this.thốngKêToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
@@ -80,19 +78,11 @@
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quảnLýToolStripMenuItem1,
             this.thốngKêToolStripMenuItem1,
             this.thốngKêToolStripMenuItem2});
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.adminToolStripMenuItem.Text = "Admin";
-            // 
-            // quảnLýToolStripMenuItem1
-            // 
-            this.quảnLýToolStripMenuItem1.Name = "quảnLýToolStripMenuItem1";
-            this.quảnLýToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.quảnLýToolStripMenuItem1.Text = "Đăng nhập";
-            this.quảnLýToolStripMenuItem1.Click += new System.EventHandler(this.quảnLýToolStripMenuItem1_Click);
             // 
             // thốngKêToolStripMenuItem1
             // 
@@ -101,7 +91,7 @@
             this.quảnLýKháchHàngToolStripMenuItem1,
             this.quảnLýCDToolStripMenuItem1});
             this.thốngKêToolStripMenuItem1.Name = "thốngKêToolStripMenuItem1";
-            this.thốngKêToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.thốngKêToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.thốngKêToolStripMenuItem1.Text = "Quản Lý";
             // 
             // quảnLýNhânViênToolStripMenuItem1
@@ -135,7 +125,7 @@
             this.thốngKêSốLượngCDBánTrongNgàyToolStripMenuItem,
             this.top10CDBánNhiềuNhấtTrongThángToolStripMenuItem});
             this.thốngKêToolStripMenuItem2.Name = "thốngKêToolStripMenuItem2";
-            this.thốngKêToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.thốngKêToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.thốngKêToolStripMenuItem2.Text = "Thống Kê";
             // 
             // thốngkêĐơnHàngToolStripMenuItem1
@@ -177,17 +167,10 @@
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.đăngNhậpToolStripMenuItem,
             this.thốngKêDoanhThuTrongNgàyToolStripMenuItem});
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
             this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.nhânViênToolStripMenuItem.Text = "Nhân Viên";
-            // 
-            // đăngNhậpToolStripMenuItem
-            // 
-            this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
-            this.đăngNhậpToolStripMenuItem.Text = "Đăng nhập";
             // 
             // thốngKêDoanhThuTrongNgàyToolStripMenuItem
             // 
@@ -217,12 +200,14 @@
             this.quảnLýKháchHàngToolStripMenuItem.Name = "quảnLýKháchHàngToolStripMenuItem";
             this.quảnLýKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quảnLýKháchHàngToolStripMenuItem.Text = "Quản lý khách hàng";
+            this.quảnLýKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.quảnLýKháchHàngToolStripMenuItem_Click);
             // 
             // quảnLýCDToolStripMenuItem
             // 
             this.quảnLýCDToolStripMenuItem.Name = "quảnLýCDToolStripMenuItem";
             this.quảnLýCDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quảnLýCDToolStripMenuItem.Text = "Quản lý CD";
+            this.quảnLýCDToolStripMenuItem.Click += new System.EventHandler(this.quảnLýCDToolStripMenuItem_Click);
             // 
             // thốngKêToolStripMenuItem
             // 
@@ -314,7 +299,6 @@
             this.Name = "frmMainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chức Năng";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMainUI_FormClosing);
             this.Load += new System.EventHandler(this.frmMainUI_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
@@ -328,7 +312,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem thốngKêToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem quảnLýNhânViênToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem quảnLýKháchHàngToolStripMenuItem1;
@@ -341,7 +324,6 @@
         private System.Windows.Forms.ToolStripMenuItem thốngKêSốLượngCDBánTrongNgàyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem top10CDBánNhiềuNhấtTrongThángToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đăngNhậpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thốngKêDoanhThuTrongNgàyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLýNhânViênToolStripMenuItem;

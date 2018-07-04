@@ -103,6 +103,11 @@ namespace Presentation.UIs
         {
 
         }
+        public Form RefToMainUI { get; set; }
+        private void frmCD_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.RefToMainUI.Show();
+        }
     }
 }
 

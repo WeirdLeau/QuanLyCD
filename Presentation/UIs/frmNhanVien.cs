@@ -16,7 +16,11 @@ namespace Presentation.UIs
         {
             InitializeComponent();
         }
+        public Form RefToMainUI { get; set; }
 
-       
+        private void frmNhanVien_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.RefToMainUI.Show();
+        }
     }
 }

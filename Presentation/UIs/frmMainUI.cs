@@ -12,6 +12,7 @@ namespace Presentation.UIs
 {
     public partial class frmMainUI : Form
     {
+        
         private frmDangNhap frmDangNhap;
         public frmMainUI(int type, frmDangNhap frmDangNhap)
         {
@@ -32,56 +33,90 @@ namespace Presentation.UIs
         }
 
 
-
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
 
         {
             
             this.frmDangNhap.clear();
-            this.Close();
             
+            this.Visible = false;
+
+            //this.Close();
+            //this.DialogResult = DialogResult.OK;
+
         }
 
-        private void quảnLýToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            
-            frmDangNhap dn = new frmDangNhap();
-            dn.ShowDialog();
-        }
-
-        private void quảnLýNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-          
-            frmNhanVien nv = new frmNhanVien();
-            nv.ShowDialog();
-        }
-
+       
+        
         private void frmMainUI_Load(object sender, EventArgs e)
         {
             label1.Text = "BÉ CUTE";
         }
 
+        private void quảnLýNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmNhanVien nv = new frmNhanVien();
+            nv.RefToMainUI = this;
+            this.Hide();
+            nv.ShowDialog();
+        }
+
         private void quảnLýKháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmKhachHang kh = new frmKhachHang();
+            kh.RefTofrmMainUI = this;
+            this.Hide();
             kh.ShowDialog();
         }
 
         private void quảnLýCDToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmCD cd = new frmCD();
+            cd.RefToMainUI = this;
+            this.Hide();
             cd.ShowDialog();
         }
 
+        
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmNhanVien nv = new frmNhanVien();
+            nv.RefToMainUI = this;
+            this.Hide();
             nv.ShowDialog();
         }
 
-        private void frmMainUI_FormClosing(object sender, FormClosingEventArgs e)
+        private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmDangNhap dn = new frmDangNhap();
+            dn.ShowDialog();
         }
+
+        private void quảnLýKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmKhachHang kh = new frmKhachHang();
+            kh.RefTofrmMainUI = this;
+            this.Hide();
+            kh.ShowDialog();
+        }
+
+        private void quảnLýCDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCD cd = new frmCD();
+            cd.RefToMainUI = this;
+            this.Hide();
+            cd.ShowDialog();
+        }
+
+        //private void frmMainUI_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    Application.Exit();
+        //}
     }
 }
