@@ -78,12 +78,12 @@ namespace Presentation.UIs
                    this.Show();
 
                 }
-
-                else
-                {
-                    MessageBox.Show("Đăng nhập không thành công");
-                }
+            
+           else
+            {
+                MessageBox.Show("Đăng nhập không thành công");
             }
+        }
 
 
             count++;

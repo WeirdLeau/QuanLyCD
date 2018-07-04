@@ -51,7 +51,7 @@
     <Compile Include="UIs\AboutUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UIs\AboutUs.Designer.cs">
+    <Compile Include="UIs\AboutUs.designer.cs">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </Compile>
     <Compile Include="UIs\frmBanCD.cs">
