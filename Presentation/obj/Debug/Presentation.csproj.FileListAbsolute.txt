@@ -22,7 +22,6 @@ C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanL
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.Properties.Resources.resources
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmBanCD.resources
-C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmBanCDNew.resources
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmQuanLyBanCD.resources
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmCD.resources
 C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.UIs.frmDangNhap.resources
@@ -54,3 +53,4 @@ C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.csproj
 C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.exe
 C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.pdb
 C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.AboutUs.resources
+C:\Users\tranc\Desktop\Study\LT Windows\BaiTapLon_QuanLyCD_Nhom9\slnNhom09_QuanLyCD\Presentation\obj\Debug\Presentation.UIs.AboutUs.resources
