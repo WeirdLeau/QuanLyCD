@@ -44,15 +44,16 @@ namespace Presentation.UIs
 
         private void quảnLýToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             frmDangNhap dn = new frmDangNhap();
-            dn.Show();
+            dn.ShowDialog();
         }
 
         private void quảnLýNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+          
             frmNhanVien nv = new frmNhanVien();
-            nv.Show();
+            nv.ShowDialog();
         }
 
         private void frmMainUI_Load(object sender, EventArgs e)
@@ -63,13 +64,24 @@ namespace Presentation.UIs
         private void quảnLýKháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmKhachHang kh = new frmKhachHang();
-            kh.Show();
+            kh.ShowDialog();
         }
 
         private void quảnLýCDToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmCD cd = new frmCD();
-            cd.Show();
+            cd.ShowDialog();
+        }
+
+        private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhanVien nv = new frmNhanVien();
+            nv.ShowDialog();
+        }
+
+        private void frmMainUI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

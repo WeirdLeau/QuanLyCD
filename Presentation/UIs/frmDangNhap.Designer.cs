@@ -58,6 +58,7 @@
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(207, 23);
             this.txtuser.TabIndex = 2;
+            this.txtuser.Text = "dangchaugiang@gmail.com";
             this.txtuser.TextChanged += new System.EventHandler(this.txtuser_TextChanged);
             // 
             // txtpass
@@ -68,6 +69,7 @@
             this.txtpass.PasswordChar = '*';
             this.txtpass.Size = new System.Drawing.Size(207, 23);
             this.txtpass.TabIndex = 4;
+            this.txtpass.Text = "789";
             this.txtpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
             // 
             // label2
@@ -133,6 +135,7 @@
             this.Controls.Add(this.piclogin);
             this.Name = "frmDangNhap";
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDangNhap_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.piclogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -129,5 +129,10 @@ namespace Presentation.UIs
                 timer1.Stop();
             }
         }
+
+        private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
