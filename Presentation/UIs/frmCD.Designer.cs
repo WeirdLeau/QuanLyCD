@@ -368,6 +368,7 @@
             this.Name = "frmCD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thông Tin CD";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCD_FormClosing);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

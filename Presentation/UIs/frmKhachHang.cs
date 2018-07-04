@@ -16,5 +16,11 @@ namespace Presentation.UIs
         {
             InitializeComponent();
         }
+        public Form RefTofrmMainUI { get; set; }
+
+        private void frmKhachHang_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.RefTofrmMainUI.Show();
+        }
     }
 }

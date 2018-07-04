@@ -54,12 +54,6 @@
     <Compile Include="UIs\frmBanCD.Designer.cs">
       <DependentUpon>frmBanCD.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIs\frmQuanLyHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UIs\frmQuanLyHoaDon.Designer.cs">
-      <DependentUpon>frmQuanLyHoaDon.cs</DependentUpon>
-    </Compile>
     <Compile Include="UIs\frmCD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,18 +84,6 @@
     <Compile Include="UIs\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIs\frmThongKeDoanhThu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UIs\frmThongKeDoanhThu.Designer.cs">
-      <DependentUpon>frmThongKeDoanhThu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UIs\frmThongKeKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UIs\frmThongKeKho.Designer.cs">
-      <DependentUpon>frmThongKeKho.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -114,9 +96,6 @@
     </Compile>
     <EmbeddedResource Include="UIs\frmBanCD.resx">
       <DependentUpon>frmBanCD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UIs\frmQuanLyHoaDon.resx">
-      <DependentUpon>frmQuanLyHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIs\frmCD.resx">
       <DependentUpon>frmCD.cs</DependentUpon>
@@ -132,12 +111,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIs\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UIs\frmThongKeDoanhThu.resx">
-      <DependentUpon>frmThongKeDoanhThu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UIs\frmThongKeKho.resx">
-      <DependentUpon>frmThongKeKho.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
