@@ -53,3 +53,4 @@ C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.csproj
 C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
 C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.exe
 C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Su\Documents\GitHub\QuanLyCD\Presentation\obj\Debug\Presentation.UIs.AboutUs.resources

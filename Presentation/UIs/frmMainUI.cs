@@ -12,7 +12,7 @@ namespace Presentation.UIs
 {
     public partial class frmMainUI : Form
     {
-        private frmDangNhap frmDangNhap;
+        public frmDangNhap frmDangNhap;
         public frmMainUI(int type, frmDangNhap frmDangNhap)
         {
             this.frmDangNhap = frmDangNhap;
@@ -36,22 +36,22 @@ namespace Presentation.UIs
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
 
         {
-            
+
             this.frmDangNhap.clear();
             this.Close();
-            
+
         }
 
         private void quảnLýToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+
             frmDangNhap dn = new frmDangNhap();
             dn.ShowDialog();
         }
 
         private void quảnLýNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-          
+            this.Hide();
             frmNhanVien nv = new frmNhanVien();
             nv.ShowDialog();
         }
@@ -79,9 +79,6 @@ namespace Presentation.UIs
             nv.ShowDialog();
         }
 
-        private void frmMainUI_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+
     }
 }
