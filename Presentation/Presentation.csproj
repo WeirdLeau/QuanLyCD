@@ -48,6 +48,12 @@
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIs\AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIs\frmBanCD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UIs\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIs\frmBanCD.resx">
       <DependentUpon>frmBanCD.cs</DependentUpon>
     </EmbeddedResource>

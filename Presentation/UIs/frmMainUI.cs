@@ -12,8 +12,12 @@ namespace Presentation.UIs
 {
     public partial class frmMainUI : Form
     {
+<<<<<<< HEAD
         
         private frmDangNhap frmDangNhap;
+=======
+        public frmDangNhap frmDangNhap;
+>>>>>>> 388801fb4603872fe900bb33c5a52b10eb084e18
         public frmMainUI(int type, frmDangNhap frmDangNhap)
         {
             this.frmDangNhap = frmDangNhap;
@@ -36,13 +40,17 @@ namespace Presentation.UIs
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
 
         {
-            
+
             this.frmDangNhap.clear();
+<<<<<<< HEAD
             
             this.Visible = false;
 
             //this.Close();
             //this.DialogResult = DialogResult.OK;
+=======
+            this.Close();
+>>>>>>> 388801fb4603872fe900bb33c5a52b10eb084e18
 
         }
 
@@ -50,7 +58,13 @@ namespace Presentation.UIs
         
         private void frmMainUI_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             label1.Text = "BÉ CUTE";
+=======
+
+            frmDangNhap dn = new frmDangNhap();
+            dn.ShowDialog();
+>>>>>>> 388801fb4603872fe900bb33c5a52b10eb084e18
         }
 
         private void quảnLýNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -90,6 +104,7 @@ namespace Presentation.UIs
             nv.ShowDialog();
         }
 
+<<<<<<< HEAD
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDangNhap dn = new frmDangNhap();
@@ -118,5 +133,8 @@ namespace Presentation.UIs
         //{
         //    Application.Exit();
         //}
+=======
+
+>>>>>>> 388801fb4603872fe900bb33c5a52b10eb084e18
     }
 }

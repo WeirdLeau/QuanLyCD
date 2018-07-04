@@ -84,6 +84,16 @@
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.adminToolStripMenuItem.Text = "Admin";
             // 
+<<<<<<< HEAD
+=======
+            // quảnLýToolStripMenuItem1
+            // 
+            this.quảnLýToolStripMenuItem1.Name = "quảnLýToolStripMenuItem1";
+            this.quảnLýToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
+            this.quảnLýToolStripMenuItem1.Text = "Đăng nhập";
+            this.quảnLýToolStripMenuItem1.Click += new System.EventHandler(this.quảnLýToolStripMenuItem1_Click);
+            // 
+>>>>>>> 388801fb4603872fe900bb33c5a52b10eb084e18
             // thốngKêToolStripMenuItem1
             // 
             this.thốngKêToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
